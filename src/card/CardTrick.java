@@ -20,6 +20,9 @@ public class CardTrick {
 
         // Generate random cards for magicHand
         for (int i = 0; i < magicHand.length; i++) {
+            Card luckyCard = new Card();
+              luckyCard.setValue(7);
+              luckyCard.setSuit("Hearts");
             Card c = new Card();
             Random random = new Random();
             int randomNumber = random.nextInt(13) + 1; // Add 1 to ensure value is between 1 and 13
